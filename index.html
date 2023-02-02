@@ -1,36 +1,121 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Todo app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./images/bg-desktop-light.jpg" alt="" />
+    </header>
+    <main>
+      <h1>Todo</h1>
+      <div></div>
+      <form>
+        <div class="new-input">
+          <span class="new-input__dummy"></span>
+          <input type="text" placeholder="Create a new todo..." />
+        </div>
+        <div class="todo-items">
+          <ul class="todo-items__list">
+            <li class="todo-items__item todo-items--done">
+              <input
+                class="todo-items__checkbox"
+                type="checkbox"
+                id="item-0"
+                checked
+              />
+              <div class="todo-items__pseudo">
+                <img src="./images/icon-check.svg" alt="" />
+              </div>
+              <label class="todo-items__text" for="item-0">
+                Complete online Javascript course</label
+              >
+            </li>
+            <li class="todo-items__item">
+              <input type="checkbox" id="item-1" />
+              <label class="todo-items__text" for="item-1"
+                >Jog around the park 3x</label
+              >
+            </li>
+            <li class="todo-items__item">
+              <input type="checkbox" id="item-2" />
+              <label class="todo-items__text" for="item-2"
+                >10 minutes meditation</label
+              >
+            </li>
+            <li class="todo-items__item">
+              <input type="checkbox" id="item-3" />
+              <label class="todo-items__text" for="item-3"
+                >Read for 1 hour</label
+              >
+            </li>
+            <li class="todo-items__item">
+              <input type="checkbox" id="item-4" />
+              <label class="todo-items__text" for="item-4"
+                >Pick up groceries</label
+              >
+            </li>
+            <li class="todo-items__item">
+              <input type="checkbox" id="item-5" />
+              <label class="todo-items__text" for="item-5"
+                >Complete Todo App on Frontend Mentor</label
+              >
+            </li>
+          </ul>
+          <div class="todo-items__action-bar">
+            <span class="todo-items__count">5 items left</span>
+            <div class="todo-items__filters">
+              <span class="todo-items__filter todo-items__filter--active">All</span> <span class="todo-items__filter">Active</span> <span class="todo-items__filter">Completed</span>
+            </div>
+            <span>Clear Completed</span>
+          </div>
+        </div>
+      </form>
+      <div>
+        <!-- Add dynamic number -->
+      </div>
+      <!-- <div>Drag and drop to reorder list</div> -->
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          rel="noopener"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sathees Arumugam</a>.
+      </div>
+    </footer>
+  </body>
 </html>
